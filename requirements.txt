@@ -1,0 +1,13 @@
+transformers==4.31.0
+torch==2.0.1
+torchaudio==2.0.2
+torcheval==0.0.6
+torchtnt==0.1.0
+torchvision==0.15.2
+numpy==1.26.0
+scikit-learn==1.2.2
+tqdm==4.65.0
+datasets==2.13.1
+openai @ file:///home/conda/feedstock_root/build_artifacts/openai_1701227576303/work
+matplotlib
+collections
