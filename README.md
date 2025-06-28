@@ -1,4 +1,5 @@
 # Onpremise LLM Normal Detection
+Official codes for **Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis** on Conference on Health, Inference, and Learning (CHIL) 2024.
 
 ## Abstract
 This study demonstrates the first in-hospital adaptation of a cloud-based AI, similar to ChatGPT, into
