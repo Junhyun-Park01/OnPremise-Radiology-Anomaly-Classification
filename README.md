@@ -73,7 +73,7 @@ If you use this repository in your research, please cite:
   title     = {Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis},
   author    = {Kyungsu Kim and Junhyun Park and Saul Langarica and Adham Mahmoud Alkhadrawi and Synho Do},
   booktitle = {Conference on Health, Inference, and Learning (CHIL)},
-  journal   = {Proceedings of Machine Learning Research (PMLR)},
+  publisher   = {Proceedings of Machine Learning Research (PMLR)},
   volume    = {248},
   pages     = {72--87},
   year      = {2024}
