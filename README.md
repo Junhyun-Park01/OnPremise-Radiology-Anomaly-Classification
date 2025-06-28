@@ -1,6 +1,8 @@
 # Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis
 Official codes for **Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis** on Conference on Health, Inference, and Learning (CHIL) 2024.
 
+![alt text](main.png)
+
 ## Abstract
 This study demonstrates the first in-hospital adaptation of a cloud-based AI, similar to ChatGPT, into
 a secure model for analyzing radiology reports, prioritizing patient data privacy. By employing a unique
