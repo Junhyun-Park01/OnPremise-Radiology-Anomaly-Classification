@@ -17,9 +17,9 @@ $ conda activate normal_detection
 $ pip install -r requirements.txt
 </code></pre>
 
-## Trained model ckpt and test datasets
-We utilized the trained abnomaly sentence-level classificatio model, and you can downloaded the model on this link: [Anomaly-Classification](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=drive_link).
-
+## Trained model ckpt
+With the RadBERT baseline, sentence-level classification with the contrastive set up has great performance for the overall ablations (0.977 AUC).
+On the following google links, you can download the trained [sentence level anomaly classifier](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=drive_link).
 
 ## Model Performance
 
