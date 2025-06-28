@@ -18,21 +18,7 @@ $ pip install -r requirements.txt
 </code></pre>
 
 ## Trained model ckpt and test datasets
-You can download the trained model ckpt and test dataset from following google drive link.
-
-**Root**: https://drive.google.com/drive/folders/1QKoruoRKlEH7i1ABO8K0NHXOGaEdOjo2?usp=drive_link
-
-**Sententance level KD + contrastive learning** : https://drive.google.com/file/d/14Hh1xOR5kYsqYwU-7db-4E7cCxtJbP6a/view?usp=drive_link
-
-**Sentence level KD (without contrastive learning)**: https://drive.google.com/file/d/1oWh0nGzP6B3sprA_Su2dZJeO8E0Bjxpk/view?usp=drive_link
-
-**Document level KD + contrastive learning**: https://drive.google.com/drive/folders/1scWk_9YwB4pqQJ--8zhLSmJuijA2DWnR?usp=drive_link
-
-**Document level KD (without contrastive learning)**: https://drive.google.com/drive/folders/1IM4qH9U2FtQ9P8HbvOhmlOEHgkgEmcBA?usp=drive_link
-
-**Test data**: https://drive.google.com/drive/folders/1uzyfIejR0nYAKvmXdinBceoLE04Z23WZ?usp=drive_link
-
-## Model Description
+We utilized the trained abnomaly sentence-level classificatio model, and you can downloaded the model on this link: [Anomaly-Classification](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=drive_link).
 
 
 ## Model Performance
