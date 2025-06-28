@@ -1,35 +1,82 @@
 # Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis
-Official codes for **Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis** on Conference on Health, Inference, and Learning (CHIL) 2024.
 
-![alt text](main.png)
+Official code for **Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis**, accepted at the **Conference on Health, Inference, and Learning (CHIL) 2024**.
 
-## Abstract
-This study demonstrates the first in-hospital adaptation of a cloud-based AI, similar to ChatGPT, into
-a secure model for analyzing radiology reports, prioritizing patient data privacy. By employing a unique
-sentence-level knowledge distillation method through contrastive learning, we achieve over 95% accuracy in
-detecting anomalies. The model also accurately flags uncertainties in its predictions, enhancing its reliability
-and interpretability for physicians with certainty indicators. These advancements represent significant
-progress in developing secure, efficient AI tools for healthcare, suggesting a promising future for in-hospital
-AI applications with minimal supervision.
+![Model Overview](main.png)
 
-## Requirements
-You can download the requirements using requirements.txt file.
+---
 
-<pre><code>$ conda create -n normal_detection
-$ conda activate normal_detection
-$ pip install -r requirements.txt
-</code></pre>
 
-## Trained model ckpt
-With the RadBERT baseline, sentence-level classification with the contrastive set up has great performance for the overall ablations (0.977 AUC).
-On the following google links, you can download the trained [sentence level anomaly classifier](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=drive_link).
+## 📝 Abstract
 
-## Model Performance
+This study presents the **first in-hospital adaptation** of a cloud-based AI model, similar to ChatGPT, for analyzing radiology reports in a **secure, privacy-preserving environment**.
 
-## Citation
-    @InProceedings{kim2024sparse,
-      title={},
-      author={},
-      journal={},
-      year={2024}
-    }
+We introduce a novel **sentence-level knowledge distillation framework** using contrastive learning, achieving **over 95% accuracy in anomaly detection**. The model also provides **uncertainty estimates**, improving both its reliability and interpretability for physicians.
+
+These contributions mark a significant step forward in developing secure and effective AI tools for healthcare, pointing to a promising future for **minimally supervised in-hospital AI deployment**.
+
+---
+
+## ⚙️ Requirements
+
+Set up the environment using the provided `requirements.txt` file:
+
+```bash
+conda create -n normal_detection python=3.10
+conda activate normal_detection
+pip install -r requirements.txt
+```
+
+---
+
+## Trained Model Checkpoints
+
+We provide a trained **sentence-level anomaly classifier** built on the **RadBERT** backbone, achieving **0.977 AUC** in sentence-level classification under a contrastive learning setup.
+
+👉 [Download the checkpoint (Google Drive)](https://drive.google.com/file/d/1QuRSJBnaj5Plj_XAxRE8XsyjESLyS9wb/view?usp=drive_link)
+
+---
+
+## Code Overview
+
+### 🔹 GPT Labeling (`gpt_labelling/`)
+
+- Contains code for **labeling sentences** in radiology reports via **knowledge distillation from GPT-3.5**.
+- Uses zero-shot prompting and filtering to label each sentence.
+
+### 🔹 Knowledge Distillation Ablations
+
+We conduct ablation studies across:
+
+1. **Backbone models** (e.g., RadBERT, BioBERT, ClinicalBERT)
+2. **Input formats** (document-level vs. sentence-level)
+3. **Training methods** (with/without supervised contrastive learning)
+
+#### Folders
+
+- `document_level_KD/`  
+  Document-level knowledge distillation using RadBERT. You can modify to use other backbones.
+
+- `sentence_level_KD/`  
+  Sentence-level knowledge distillation with RadBERT. Backbone can be changed easily.
+
+Both approaches use a **contrastive learning setup** for effective feature alignment.
+
+---
+
+## 📖 Citation
+
+If you use this repository in your research, please cite:
+
+```bibtex
+@InProceedings{kim2024integrating,
+  title     = {Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis},
+  author    = {Kyungsu Kim and Junhyun Park and Saul Langarica and Adham Mahmoud Alkhadrawi and Synho Do},
+  booktitle = {Conference on Health, Inference, and Learning (CHIL)},
+  journal   = {Proceedings of Machine Learning Research (PMLR)},
+  volume    = {248},
+  pages     = {72--87},
+  year      = {2024}
+}
+```
+
